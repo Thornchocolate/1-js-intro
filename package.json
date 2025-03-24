@@ -1,0 +1,15 @@
+{
+  "name": "1-js-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "array": "node --watch ./js/6-array.js",
+    "if": "node --watch ./js/5-if.js",
+    "index": "node --watch ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Thornchocolate",
+  "license": "ISC"
+}
