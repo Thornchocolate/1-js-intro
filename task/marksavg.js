@@ -20,8 +20,6 @@ console.log(marksAverage([5, 7, NaN, 10, 2]));
 console.log(marksAverage([1, 2, 3, 4, 5]));
 console.log(marksAverage([1, 2, 3, 4, 5, 6, 7, 'eight', 9, 10]));
 console.log(marksAverage([]));
-console.log(marksAverage('five'));
-console.log(marksAverage(5));
 console.log(marksAverage(1, 2, 3, 4, 5));
 console.log(marksAverage([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 console.log(marksAverage([7, 8, 9, 10]));
