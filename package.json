@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "textSize": "node --watch ./task/textsize.js",
+    "adult": "node --watch ./task/adult.js",
     "array": "node --watch ./js/6-array.js",
     "if": "node --watch ./js/5-if.js",
     "index": "node --watch ./index.js",
