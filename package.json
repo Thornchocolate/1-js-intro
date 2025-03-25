@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "typeof": "node --watch ./js/7-typeof.js",
+    "multiply": "node --watch ./task/multiply.js",
     "textSize": "node --watch ./task/textsize.js",
     "adult": "node --watch ./task/adult.js",
     "array": "node --watch ./js/6-array.js",
