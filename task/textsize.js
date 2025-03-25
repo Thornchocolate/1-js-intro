@@ -16,7 +16,7 @@ function textSize(text) {
     } else {
         return `long text from ${text.length} symbols`;
     }
-}
+};
 
 console.log(textSize(''));
 console.log(textSize('Memento mori'));

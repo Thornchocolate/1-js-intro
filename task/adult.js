@@ -10,7 +10,7 @@ function isAdult(age) {
     } else {
         return `You are not an adult.`
     }
-}
+};
 console.log(isAdult(18));
 console.log(isAdult(17));
 console.log(isAdult(25));

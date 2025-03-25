@@ -1,14 +1,19 @@
+
+//shortest solution i can think of:
 function multiply(a, b) {
-    if (typeof a !== 'number' || typeof b !== 'number' || isNaN(a) ||
-        isFinite(b) === false || !isFinite(b) || a === Infinity || b === Infinity) {
-        return 'Please provide numbers only';
+    if (typeof a !== 'number' || !isFinite(a)) {
+        return `Wrong input a: '${a}', please provide a number`;
     }
-    return a * b;
-}
+    if (typeof b !== 'number' || !isFinite(b)) {
+        return `Wrong input b: '${b}', please provide a number`;
+    }
+    return `${a} * ${b} = ` + a * b;
+};
 
 /*
 isFinite() - determines whether the passed value is a finite number
 !isFinite() - determines whether the passed value is an infinite number
+! means NOT
 */
 
 
@@ -39,4 +44,6 @@ console.log(multiply(NaN, '5'));
 console.log(multiply('5', Infinity));
 console.log(multiply(Infinity, '5'));
 
+console.log(Infinity * 0);
+console.log(Infinity / 0);
 
