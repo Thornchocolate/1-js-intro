@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "marksavg": "node --watch ./task/marksavg.js",
     "typeof": "node --watch ./js/7-typeof.js",
     "multiply": "node --watch ./task/multiply.js",
     "textSize": "node --watch ./task/textsize.js",
