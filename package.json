@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "object": "node --watch ./js/9-object.js",
+    "biggestnumber": "node --watch ./task/biggest-number.js",
     "homework1": "node --watch ./homework/1-homework.js",
     "numbers": "node --watch ./js/1-numbers.js",
     "strings": "node --watch ./js/2-strings.js",
