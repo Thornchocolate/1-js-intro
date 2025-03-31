@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "homework1": "node --watch ./homework/1-homework.js",
+    "numbers": "node --watch ./js/1-numbers.js",
+    "strings": "node --watch ./js/2-strings.js",
+    "booleans": "node --watch ./js/3-booleans.js",
+    "operators": "node --watch ./js/4-operators.js",
     "marksavg": "node --watch ./task/marksavg.js",
     "typeof": "node --watch ./js/7-typeof.js",
     "multiply": "node --watch ./task/multiply.js",

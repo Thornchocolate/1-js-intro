@@ -2,17 +2,16 @@
 function marksAverage(marks) {
     if (!Array.isArray(marks)) {
         return 'Please provide an array';
-    }
+        }
     if (marks.length === 0) {
         return 'Please provide at least one mark';
-    }
+        }
     var sum = 0;
     for (var i = 0; i < marks.length; i++) {
-        if (typeof marks[i] !== 'number' || !isFinite(marks[i]) || 10 < marks[i] < 0) {
-             i++}; 
-             sum += marks[i];
-    }
-             return sum / marks.length;
+        if (typeof marks[i] !== 'number' || !isFinite(marks[i]) || 10 < marks[i] < 0) {i++}; 
+            sum += marks[i];
+        }
+    return sum / marks.length;
     };
 
 
@@ -26,3 +25,13 @@ console.log(marksAverage([7, 8, 9, 10]));
 console.log(marksAverage([7, 8, 7, 8]));
 console.log(marksAverage([7, 8, 9, 10]));
 
+function findUniq(arr) {
+    // do magic
+    for (let i = 0; i < arr.length; i++)
+    {
+        if (arr[i] !== arr[i + 1] && arr[i] !== arr[i + 2]) {
+            return arr[i];
+        }
+    }
+}
+      
