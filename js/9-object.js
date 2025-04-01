@@ -158,12 +158,12 @@ const stud1 = {
     name: "John",
     age: 88,
     isMarried: false,
-};
+}
 const stud2 = {
     name: "Mike",
     age: 95,
     isMarried: true,
-};
+}
 const stud3 = {
     name: "Sara",
     age: 85,
