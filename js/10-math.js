@@ -94,3 +94,48 @@ if (Math.sign(a)) {
     } else {
     console.log(`\nno sign`);
     };
+//random
+let number = Math.random() * 101;
+console.log(`\nrandom`);
+console.log(Math.random()); // Random number between 0 and 1 [0, 1)
+console.log(Math.random() * 10); // Random number between 0 and 10 [0, 10)
+console.log(Math.round(number)); // Random number between 0 and 100 [0, 100)]
+
+let count3 = 0, count7 = 0;
+for (let i = 0; i < 10; i++) {
+     if (Math.random() < 0.5) {
+        count3++;
+    } else {
+        count7++;
+    }
+};
+console.log(`count3: ${count3}`);
+console.log(`count7: ${count7}`);
+
+function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+console.log(`\nrandomNumber`);
+console.log(randomNumber(1, 10));
+console.log(randomNumber(1, 10));
+console.log(randomNumber(1, 10));
+console.log(randomNumber(1, 10));
+console.log(randomNumber(1, 10));
+console.log(randomNumber(1, 10));
+console.log(randomNumber(1, 10));
+console.log(randomNumber(1, 10));
+
+console.log(`\nrandomNumber 10 times`);
+const counts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+for (let i = 0; i < 5000000; i++) {
+   const index = randomNumber(0, 9);
+    counts[index]++;
+};
+console.log(counts);
+const counts2 = [0, 0];
+for (let i = 0; i < 5000000; i++) {
+    const index = randomNumber(0, 1);
+    counts2[index]++;
+}
+console.log(counts2);
+
