@@ -152,3 +152,13 @@ console.log("Good morning everyone".split(" "));
 //charCodeAt
 console.log(`\ncharCodeAt`);
 console.log("a".charCodeAt(0));
+
+//fromCharCode
+console.log(`\nfromCharCode`);
+console.log(String.fromCharCode(97));
+console.log(String.fromCharCode(65));
+console.log(String.fromCharCode(90));
+console.log(String.fromCharCode(122));
+console.log(String.fromCharCode(2600));
+console.log(String.fromCharCode(26000));
+console.log(String.fromCharCode(98425));
