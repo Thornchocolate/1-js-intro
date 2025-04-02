@@ -74,3 +74,39 @@ const c = "chocolate";
 console.log(c);
 console.log(c.indexOf("o", c.indexOf("o") + 1));
 console.log(c.indexOf("o", c.indexOf("o", c.indexOf("o") + 1) + 1));
+
+//stringRepeat
+console.log(`\nstringRepeat`);
+console.log("hello".repeat(3));
+
+//replace
+console.log(`\nreplace`);
+console.log("hello".replace("h", "H"));
+console.log("hello".replace("l", "L"));
+console.log("hello".replace("l", "L"));
+
+const Midnight = "Midnight";
+console.log(Midnight.replace("i", "-").replace("i", "-").replaceAll("-", "_"));
+console.log(Midnight.replaceAll(Midnight, "*".repeat(Midnight.length)));
+
+//slice
+console.log(`\nslice`);
+console.log("hello".slice());
+console.log("hello".slice(-1));
+console.log("hello".slice(-2));
+console.log("hello".slice(-3));
+console.log("hello".slice(-4));
+console.log("hello".slice(0));
+console.log("hello".slice(1));
+console.log("hello".slice(2));
+console.log("hello".slice(3));
+console.log("hello".slice(4));
+console.log("hello".slice(0, 1));
+console.log("hello".slice(0, 2));
+console.log("hello".slice(0, 3));
+console.log("hello".slice(0, 4));
+console.log("hello".slice(0, 5));
+console.log("hello".slice(0, -1));
+console.log("hello".slice(0, -2));
+console.log("hello".slice(0, -3));
+console.log("hello".slice(0, -4));
