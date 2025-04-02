@@ -12,14 +12,12 @@ function validName(name) {
         }
         if (/^[0-9*#+]+$/.test(name[i])) {
             return "Name cant contain numbers";
-        } else {
-            return name[0].toUpperCase() + name.slice(1).toLowerCase();
         }
     } 
+    return name[0].toUpperCase() + name.slice(1).toLowerCase();
 };
 
 console.log(validName("joHnnY"));
 console.log(validName("hANNAh"));
 console.log(validName("naomi"));
-
 console.log(validName("naomi123"));
