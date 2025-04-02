@@ -110,3 +110,45 @@ console.log("hello".slice(0, -1));
 console.log("hello".slice(0, -2));
 console.log("hello".slice(0, -3));
 console.log("hello".slice(0, -4));
+
+//uppercase and lowercase
+console.log(`\nuppercase and lowercase`);
+console.log("hello".toUpperCase());
+console.log("hello".toLowerCase());
+console.log("hello".toLocaleUpperCase());
+console.log("hello".toLocaleLowerCase());
+console.log("hello".toLocaleUpperCase("en-UK"));
+console.log("hello".toLocaleUpperCase("lt-LT"));
+
+//trim
+console.log(`\ntrim`);
+console.log("  Midnight  ".trim());
+console.log("  Midnight  ".trimStart());
+console.log("  Midnight  ".trimEnd());
+console.log("  Midnight  ".trimStart().trimEnd());
+
+//padStart and padEnd
+console.log(`\npadStart and padEnd`);
+console.log("Midnight".padStart(10));
+console.log("Midnight".padEnd(10));
+console.log("Midnight".padStart(10, "*"));
+console.log("Midnight".padEnd(10, "*"));
+console.log("Midnight".padStart(10, "0"));
+console.log("Midnight".padEnd(10, "0"));
+console.log("Midnight".padStart(10, "0").padEnd(15, "*"));
+console.log("Midnight".padEnd(10, "0").padStart(15, "*"));
+
+// split
+console.log(`\nsplit`);
+console.log("chocolate".split());
+console.log("chocolate".split(""));
+console.log("chocolate".split("o"));
+console.log("chocolate".split("o", 1));
+console.log("chocolate".split("o", 2));
+console.log("chocolate".split("o", 3));
+console.log("chocolate".split("l", 12));
+console.log("Good morning everyone".split(" "));
+
+//charCodeAt
+console.log(`\ncharCodeAt`);
+console.log("a".charCodeAt(0));
