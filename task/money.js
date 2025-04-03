@@ -1,6 +1,6 @@
 function money(num) {
     if (num === undefined) {
-        return 0;
+        return '€0.00';
     }
     if (typeof num !== 'number') {
         return'Invalid input: not a number';
@@ -10,9 +10,11 @@ function money(num) {
 
 // Test cases
 console.log(money(1234567)); // --> "€1,234,567.00"
-console.log(money(127.88977)); // --> "€1,234,567.89"
+console.log(money(1234567.89)); // --> "€1,234,567.89"
+console.log(money(127.88977)); // --> "€127.89"
 console.log(money(0)); // --> "€0.00"
 console.log(money(-1234567)); // --> "€-1,234,567.00"
 console.log(money(-1234567.89)); // --> "€-1,234,567.89"
 console.log(money()); // --> "€0.00"
 console.log(money('1234567')); // --> Error: Invalid input: not a number
+console.log(money(3.99)) // --> "€3.99"
