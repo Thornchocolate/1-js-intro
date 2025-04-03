@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "money": "node --watch ./task/money.js",
     "nummethods": "node --watch ./js/12-number-method.js",
     "validname": "node --watch ./task/valid-name.js",
     "strmethods": "node --watch ./js/11-string-method.js",
