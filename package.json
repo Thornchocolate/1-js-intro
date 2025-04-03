@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "methodarray": "node --watch ./js/13-method-array.js",
     "money": "node --watch ./task/money.js",
     "nummethods": "node --watch ./js/12-number-method.js",
     "validname": "node --watch ./task/valid-name.js",
