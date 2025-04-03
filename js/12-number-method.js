@@ -107,10 +107,34 @@ console.log(parseFloat(num1)); // 15.5
 
 //parseFloat
 console.log("\nparseFloat");
-console.log(parseFloat("123")); // 123
-console.log(parseFloat("123abc")); // 123
+console.log(parseFloat("123.135")); // 123
+console.log(parseFloat("123.abc")); // 123
 console.log(parseFloat("abc123")); // NaN
 console.log(parseFloat("0x123")); // 0
 console.log(parseFloat("0b101")); // 0
 console.log(parseFloat("0o123")); // 0
 console.log(parseFloat("123.45")); // 123.45
+
+//to fixed
+console.log("\ntoFixed");
+const a = 12.3456789;
+console.log(a);
+console.log(typeof a);
+console.log(a.toString());
+console.log(a.toFixed(2)); // 12.35
+console.log(a.toFixed(4)); // 12.3457
+const b =  a.toFixed(4);
+console.log(typeof b); // string
+console.log(b); // 12.3457
+const c = parseFloat(b);
+console.log(typeof c); // number
+console.log(a.toFixed(1)); 
+console.log(a.toFixed(2)); 
+console.log(a.toFixed(3));
+console.log(a.toFixed(4)); 
+console.log(a.toFixed(5));
+console.log(a.toFixed(6));
+console.log(a.toFixed(7));
+console.log(a.toFixed(8));
+console.log(a.toFixed(9));
+console.log(a.toFixed(10));
