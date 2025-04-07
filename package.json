@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "nsj": "node --watch ./task/names-split-join.js",
     "practise": "node --watch ./homework/practise.js",
     "methodarray": "node --watch ./js/13-method-array.js",
     "money": "node --watch ./task/money.js",
