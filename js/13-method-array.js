@@ -39,3 +39,37 @@ for (let i = 0; i < n3.length; i++) {
 }
 console.log(n12);
 
+console.clear();
+
+const numbers2 = [1, 2, 3];
+console.log(numbers2);
+
+numbers2.push(4);
+console.log(numbers2);
+
+const g1 = numbers2.pop();
+numbers2.pop();
+console.log(numbers2, g1);
+
+numbers2.push(3, 4, 5);
+numbers2.unshift(1);
+numbers2.unshift(2);
+numbers2.unshift(3);
+console.log(numbers2);
+
+const g2 = numbers2.shift(5);
+console.log(numbers2, g2);
+
+console.clear();
+//              0   1   2   3   4
+const magic = [11, 22, 33, 44, 55];
+console.log(magic.includes(5));//false
+console.log(magic.includes(55));//true
+
+console.log(magic.indexOf(5)); // -1
+console.log(magic.indexOf(55)); // 4
+const texts = ["wakami", "rice", "chicken", "honey"];
+//needed ingredients
+console.log(`Needed ingredients: ${texts.join(`, `)}`); 
+
+
