@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "fancymath": "node --watch ./task/fancy-math.js",
+    "arrow": "node --watch ./js/14-arrow.js",
     "nsj": "node --watch ./task/names-split-join.js",
     "practise": "node --watch ./homework/practise.js",
     "methodarray": "node --watch ./js/13-method-array.js",

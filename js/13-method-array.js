@@ -80,7 +80,8 @@ console.log(c1);
 console.log(c2);
 console.log(c3);
 
-c3.slice(0, 3);
-console.log(c3)
+c3.splice(0, 3);
+console.log(c3);
+
 
 
