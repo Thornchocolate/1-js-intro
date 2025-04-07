@@ -73,3 +73,11 @@ const texts = ["wakami", "rice", "chicken", "honey"];
 console.log(`Needed ingredients: ${texts.join(`, `)}`); 
 
 
+const c1 = [1, 2, 3];
+const c2 = [4, 5, 6];
+const c3 = c1.concat(c2);
+console.log(c1);
+console.log(c2);
+console.log(c3);
+
+
