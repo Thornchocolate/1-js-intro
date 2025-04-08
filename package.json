@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "while": "node --watch ./js/17-while.js",
+    "forof": "node --watch ./js/16-for-of.js",
+    "ternary": "node --watch ./js/15-ternary.js",
     "fancymath": "node --watch ./task/fancy-math.js",
     "arrow": "node --watch ./js/14-arrow.js",
     "nsj": "node --watch ./task/names-split-join.js",
