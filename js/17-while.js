@@ -17,3 +17,14 @@ while (i2 < 10) {
     i2++;
 }
 console.log(sum2);
+
+console.clear();
+
+let count = 0;
+let sum3 = 0;
+while (sum3 < 1000000) {
+    sum3 += count++;
+}
+console.log(count);
+console.log(sum3);
+    
