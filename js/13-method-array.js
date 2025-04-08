@@ -119,4 +119,23 @@ const people100 = people.map(person => {
 })
 console.log(people100);
 
+//filter() method creates a new array with all elements that pass the test implemented by the provided function.
+const numbers3 = [1, 2, 3, 4, 5];
+const evenNumbers = numbers3.filter(x => x % 2 === 0);
+console.log(evenNumbers);
+const oddNumbers = numbers3.filter(x => x % 2 !== 0);
+console.log(oddNumbers);
+const people2 = [
+    { name: "John", age: 25 },
+    { name: "Jane", age: 21 },
+    { name: "Jack", age: 17 }
+];
+const adults = people2.filter(person => person.age >= 18);
+console.log(adults);
 
+const numbers4 = numbers3.filter(x => x > 2 && x < 4);
+console.log(numbers4);
+
+const texts2 = ["good", "morning", "world"];
+const texts2Updated = texts2.filter(t => t.length > 4);
+console.log(texts2Updated);
