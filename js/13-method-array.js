@@ -82,6 +82,41 @@ console.log(c3);
 
 c3.splice(0, 3);
 console.log(c3);
+console.clear();
+const k = [1, 2, 3, 4, 5];
+const triple = x => x * 3;
+const k3 =k.map(triple);
+console.log(k);
+console.log(k3);
+const k5 = k.map(x => x * 5);
+console.log(k5);
+const k6 = k.map(x => x );
+console.log(k6);
 
+const dict = ["rice", "chicken", "teriyaki", "soy sauce", "honey"];
+const dict2 = dict.map(x => x[0].toUpperCase());
+console.log(dict);
+console.log(dict2);
+const dict3 = dict.map(x => x[0].toUpperCase() + x.slice(1));
+console.log(dict3);
+const dict4 = dict.map(x => x.toUpperCase());
+//console.log(dict4);
+
+const people = [
+    { name: "John", age: 25 },
+    { name: "Jane", age: 30 },
+    { name: "Jack", age: 35 }
+];
+const names = people.map(person => person.name);
+const ages = people.map(person => person.age);
+console.log(names + " " + ages);
+
+const people100 = people.map(person => {
+    return {
+        name: person.name,
+        years: 100 - person.age + "years left until 100"
+    };
+})
+console.log(people100);
 
 
