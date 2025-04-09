@@ -25,3 +25,4 @@ const str = "Hello";
 for (let index in str) {
   console.log(index + ": " + str[index]);
 }
+

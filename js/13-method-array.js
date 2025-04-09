@@ -139,3 +139,71 @@ console.log(numbers4);
 const texts2 = ["good", "morning", "world"];
 const texts2Updated = texts2.filter(t => t.length > 4);
 console.log(texts2Updated);
+
+console.clear();
+
+//fill() method fills all the elements of an array from a start index to an end index with a static value.
+const default5 = [0, 0, 0, 0, 0];
+console.log(default5);
+const default7 = Array(72).fill(99);
+console.log(default7);
+const default8 = Array(72).fill(99, 0, 10);
+console.log(default8);
+const default9 = Array(72).fill(99, 10, 20);
+console.log(default9);
+const negatives = Array(8).fill(false);
+console.log(negatives);
+const negatives2 = Array(8).fill(false, 3, 5);
+console.log(negatives2);
+const hello = Array(8).fill("hello");
+console.log(hello);
+
+const demo = [1, 2, 3, 4, 5];
+demo.fill(777)
+console.log(demo);
+
+console.clear();
+
+//every() method tests whether all elements in the array pass the test implemented by the provided function.
+const numbers5 = [1, 2, 3, 4, 5];
+const allEven = numbers5.every(x => x % 2 === 0);
+console.log(allEven); // false
+const allOdd = numbers5.every(x => x % 2 !== 0);
+console.log(allOdd); // false
+const allPositive = numbers5.every(x => x > 0);
+console.log(allPositive); // true
+if (numbers5.every(x => x > 0)) {
+    console.log("All numbers are positive");
+}
+const strings = ["hello", "world"];
+const allStrings = strings.every(x => typeof x === "string");
+console.log(allStrings); // true
+const allStringsValid = strings.every(x => x.length > 0);
+console.log(allStringsValid); // true
+
+//some() method tests whether at least one element in the array passes the test implemented by the provided function.
+const numbers6 = [1, 2, 3, 4, 5];
+const hasEven = numbers6.some(x => x % 2 === 0);
+console.log(hasEven); // true
+const hasOdd = numbers6.some(x => x % 2 !== 0);
+console.log(hasOdd); // true
+const hasNegative = numbers6.some(x => x < 0);
+console.log(hasNegative); // false
+const hasPositive = numbers6.some(x => x > 0);
+console.log(hasPositive); // true
+const strings2 = ["hello", "world"];
+const hasString = strings2.some(x => typeof x === "string");
+console.log(hasString); // true
+const hasStringValid = strings2.some(x => x.length > 0);
+console.log(hasStringValid); // true
+
+
+
+//reduce() method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+const numbers7 = [1, 2, 3, 4, 5];
+const sum = numbers7.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(sum); // 15
+
+
+//sort() method sorts the elements of an array in place and returns the sorted array.
+
