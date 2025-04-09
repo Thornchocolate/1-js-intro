@@ -197,13 +197,19 @@ console.log(hasString); // true
 const hasStringValid = strings2.some(x => x.length > 0);
 console.log(hasStringValid); // true
 
-
+//sort() method sorts the elements of an array in place and returns the sorted array.
+const numbers8 = [5, 3, 8, 1, 2];
+const sortedNumbers = numbers8.sort((a, b) => a - b);
+console.log(sortedNumbers); // [1, 2, 3, 5, 8]
+const strings3 = ["banana", "apple", "cherry"];
+const sortedStrings = strings3.sort();
+console.log(sortedStrings); // ["apple", "banana", "cherry"]
+const sortedStrings2 = strings3.sort((a, b) => a.length - b.length);
+console.log(sortedStrings2); // ["apple", "banana", "cherry"]
+const sortedStrings3 = strings3.sort((a, b) => b.length - a.length);
+console.log(sortedStrings3); // ["banana", "cherry", "apple"]
 
 //reduce() method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
 const numbers7 = [1, 2, 3, 4, 5];
 const sum = numbers7.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 console.log(sum); // 15
-
-
-//sort() method sorts the elements of an array in place and returns the sorted array.
-
