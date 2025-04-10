@@ -47,3 +47,58 @@ const p312 = {...p3, ...p1, ...p2};
 console.log(p312);
 const p4 = {d: 4, ...p3};
 console.log(p4);
+
+console.clear();
+const person = {
+  adress: '123 Main St',
+  name: 'Rin',
+  age: 22,
+  isStudent: true,
+};
+const {name, age, ...p} = person;
+
+console.log(name); // Rin
+console.log(age); // 22
+console.log(p); // { adress: '123 Main St', isStudent: true }
+
+const students = [
+    {
+        name: 'Rin',
+        age: 22,
+    },
+    {
+        name: 'Len',
+        age: 23,
+    },
+];
+
+//Student Rin is x years old
+
+for (let i = 0; i < students.length; i++) {
+    const {name, age} = students[i];
+    console.log(`Student ${name} is ${age} years old`);
+}
+
+console.log("---------------------");
+for (const {name, age} of students) {
+    const result = `Student ${name} is ${age} years old`;
+    console.log(result);
+}
+console.log("---------------------");
+const numbers = [
+    [0],
+    [1, 11, ],
+    [2, 22, 222],
+    [3, 33, 333, 3333],
+    [4],
+    [5],
+    [6],
+];
+
+//first num is x, and there are y numbers
+
+for (const numberList of numbers) {
+    const [first, ...rest] = numberList;
+    console.log(`First num is ${first}, and there are ${rest.length} numbers`);
+}
+
