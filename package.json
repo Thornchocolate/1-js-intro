@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "switch": "node --watch ./js/22-switch.js",
     "desrest": "node --watch ./js/21-destructuring-rest.js",
     "reduce": "node --watch ./js/20-reduce.js",
     "sort": "node --watch ./js/19-sort.js",
